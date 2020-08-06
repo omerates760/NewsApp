@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editSearch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:layout_weight="0.5"
+        android:visibility="visible"
+        android:inputType="textPersonName"
+        android:hint="@string/search_news" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_search"
+        android:layout_width="match_parent"
+        android:layout_weight="5"
+        android:layout_height="0dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+</LinearLayout>
